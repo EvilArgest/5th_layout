@@ -1,0 +1,71 @@
+@import "variables";
+@mixin underline() {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: $blue;
+  position: absolute;
+  left: 50%;
+}
+@mixin wrapper__mixin(){
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0;
+  overflow: hidden;
+}
+@mixin transperentbtn(){
+  width: 160px;
+  height: 50px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+@mixin bluebtn(){
+  width: 160px;
+  height: 50px;
+  background-color: $blue;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px $soft-black;
+  border-radius: 3px;
+  margin-block: auto;
+}
+@mixin inside__bnt(){
+  font-size: 14px;
+  font-family: $bold;
+  color: $white;
+  letter-spacing: normal;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@mixin icons__row(){
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin blue__title(){
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 48px;
+  font-weight: 700;
+  padding-top: 1.4px;
+  text-transform: uppercase;
+  letter-spacing: 1.65px;
+  color: $blue;
+}
+@mixin h2__title{
+  text-align: center;
+  font-family: $semibold;
+  font-size: 36px;
+  text-transform: none;
+  font-weight: 600;
+  margin-top: -1.75px;
+  letter-spacing: 0.099px;
+  color: $light-black-grey;
+  position: relative;
+}
